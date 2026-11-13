@@ -167,7 +167,9 @@ window.AUTH_CONFIG = {
           "tone": "dark"
         }
       ],
-      "heroMode": "slide"
+      "heroMode": "slide",
+      "headline": "ECU Data Analyzer",
+      "lead": "Raw Data 분석 · 가속성, 부하율, 연비 계산 · 다중 데이터 구간의 유사도 분석 · 데이터 시각화 보고서 생성"
     }
   }
 };
