@@ -6,20 +6,26 @@
 <title>시험 데이터 비교 보고서 — 구간 지표 · 유사 구간 · 유사성 판정</title>
 <meta name="description" content="차량 시험 raw data(CSV·엑셀)를 올리면 지정한 조건의 구간(예: 차속 0→30 km/h 가속)을 뽑아 가속 시간·평균 부하율·연비를 함께 계산하고, 레퍼런스와 페달·부하율·회전수 패턴이 닮은 구간을 찾아 유사성 지표와 함께 비교합니다. 사용자가 유사 여부를 확인한 뒤 보고서를 만듭니다.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="canonical" href="https://build-2611-05.jobability.co.kr/">
+<link rel="canonical" href="https://aebonlee.github.io/build-2611-05/">
 <meta name="robots" content="index,follow">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="생성형 AI 업무자동화 전문가과정 · 2차수">
-<meta property="og:url" content="https://build-2611-05.jobability.co.kr/">
+<meta property="og:url" content="https://aebonlee.github.io/build-2611-05/">
 <meta property="og:title" content="시험 데이터 비교 보고서 — 생성형 AI 업무자동화 전문가과정 2차수">
 <meta property="og:description" content="시험 raw data 에서 조건 구간 지표를 계산하고, 레퍼런스와 닮은 구간을 찾아 유사성을 판정한 뒤 보고서로 냅니다.">
-<meta property="og:image" content="https://build-2611-05.jobability.co.kr/og-index.png">
+<meta property="og:image" content="https://aebonlee.github.io/build-2611-05/og-index.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/app.css">
+<!-- auth-kit: 로그인 전에는 도구 화면을 감춘다(js/auth.js 가 판정 뒤 푼다) -->
+<script>document.documentElement.classList.add('auth-lock')</script>
+<link rel="stylesheet" href="css/auth.css?v=2026-11-13.1">
+<link rel="stylesheet" href="css/board.css?v=2026-11-13.1">
+<link rel="stylesheet" href="css/kit-build.css?v=2026-11-13.1">
+<!-- /auth-kit -->
 </head>
 <body>
 
@@ -141,5 +147,12 @@
 <script src="lib/xlsx.full.min.js"></script>
 <script src="js/engine.js"></script>
 <script src="js/app.js"></script>
+<!-- auth-kit: 로그인 · 사용 신청 · 승인 · 게시판(키트 정본 data10-00/kit/auth, 적용 build-2611-00/tools/kit) -->
+<script src="vendor/supabase.js?v=2026-11-13.1"></script>
+<script src="js/auth-config.js?v=2026-11-13.1"></script>
+<script src="js/kit-build.js?v=2026-11-13.1"></script>
+<script src="js/board.js?v=2026-11-13.1"></script>
+<script src="js/auth.js?v=2026-11-13.1"></script>
+<!-- /auth-kit -->
 </body>
 </html>
